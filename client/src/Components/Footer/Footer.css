@@ -1,0 +1,19 @@
+.footer{
+    height: 100px;
+    background: #1b1c1d;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.footer p {
+    font-size: 1.1em;
+}
+
+.footer a {
+    color: var(--links);
+    text-decoration: none;
+    font-size: 1.2em;
+}
