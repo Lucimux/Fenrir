@@ -1,0 +1,10 @@
+.title{
+    font-family: KaushanScript;
+    text-align: center;
+    font-size: 3em;
+}
+
+header {
+    border-bottom: 1px solid #d0d4d9;
+    box-shadow: 0px 1px 1px #d0d4d9;
+}
