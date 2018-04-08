@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Footer from '../../Components/Footer/Footer'
 import Login from '../../Components/Login/Login'
+import Header from '../../Components/Header/Header'
 import Fenrir from '../../Assets/Fenrir.png'
 import './Home.css'
 
@@ -8,9 +9,7 @@ export default class Home extends Component {
     render () {
         return (
             <main className='grid-layout'>
-                <header>
-                    <h1 className='title'>Fenrir</h1>                
-                </header>
+                <Header/>                    
                 <section className='content'>
                     <div className='first'>
                         <img src={Fenrir} className='logo' alt="Fenrir Logo"/>
