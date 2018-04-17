@@ -5,6 +5,7 @@
 }
 
 header {
+    /* position: fixed; */
     border-bottom: 1px solid #d0d4d9;
     box-shadow: 0px 1px 1px #d0d4d9;
 }
