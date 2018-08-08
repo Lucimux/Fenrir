@@ -23,8 +23,13 @@ export default class Profile extends Component {
             {
                 name:"XSS Scripting",
                 key: "XSS"
+            },
+            {
+                name: "Modificando peticiones HTTP",
+                key: "Header"
             }
         ],
+        btnIndex: 0,
         tema: null,
         htmlMode: 'raw'
     }
@@ -53,11 +58,30 @@ export default class Profile extends Component {
         })
     }
 
+    backHandler = () => {
+        this.setState((prevState) => {
+            return {
+                btnIndex: prevState.btnIndex > 0 ? prevState.btnIndex -1 : 0
+            }
+        })
+        this.themeClickHandler(this.state.index[this.state.btnIndex].key)
+    }
+
+    nextHandler = () => {
+        this.setState((prevState) => {
+            return {
+                btnIndex: prevState.btnIndex < prevState.index.length -1 ? prevState.btnIndex + 1 : prevState.index.length - 1
+            }
+        })
+        this.themeClickHandler(this.state.index[this.state.btnIndex].key)
+    }
+
+
     render() {
         
         return (
             <section className='profile-grid-layout'>
-                <Header/>
+                <Header auth={true}/>
                 <section className='profile-content'>
                     <div className='index'>
                         <h2 className='index-header'>Temario</h2>
@@ -75,8 +99,8 @@ export default class Profile extends Component {
                             className='markdown'
                         />
                         <div className='btn-controll'>
-                            <button className='btn-prev'>Anterior</button>
-                            <button className='btn-next'>Siguiente</button>
+                            <button className='btn-prev' onClick={this.backHandler}>Anterior</button>
+                            <button className='btn-next' onClick={this.nextHandler}>Siguiente</button>
                         </div>
                     </div>
                 </section>

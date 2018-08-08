@@ -1,11 +1,41 @@
+header {
+    border-bottom: 1px solid #d0d4d9;
+    box-shadow: 0px 1px 1px #d0d4d9;
+    display: flex;
+}
+
 .title{
+    flex: 1;
     font-family: KaushanScript;
     text-align: center;
     font-size: 3em;
 }
 
-header {
-    /* position: fixed; */
-    border-bottom: 1px solid #d0d4d9;
-    box-shadow: 0px 1px 1px #d0d4d9;
+.navItem {
+    border: none;    
+    border-left: 1px solid #d0d4d9;    
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
+
+.navItem a {
+    text-decoration: none;
+    font-size: 1.1em;    
+    color: var(--links);
+}
+
+.navItem:hover{
+    transition-duration: 0.4s;
+    box-shadow: 0px 2px 2px  #d0d4d9;    
+}
+
+.navItem > a:hover  {
+    font-size: 1.12em;    
+}
+
+
+

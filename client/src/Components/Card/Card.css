@@ -1,0 +1,29 @@
+.card{
+    width: 250px;
+    min-height: 350px;
+    padding: 5px;  
+    border: 1px solid #d0d4d9;
+    box-shadow: 0px 1px 1px #d0d4d9;
+    margin: 3px;
+}
+.card-image {
+    width: 238px;
+    height: 195.262px;
+}
+
+.card-title {
+    font-size: 1.15em;
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+}
+
+.card-sub, .card-score{
+    display: block;
+    font-size: 1.1em;
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+}
+
+.card-links{
+    color: var(--links);
+    font-size: 1.1em;
+    text-decoration: none;
+}
